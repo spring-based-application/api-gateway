@@ -1,0 +1,112 @@
+########################################################################################################################
+##################################################### GetInfo ##########################################################
+########################################################################################################################
+
+#################################################################### microservice-a
+### Dirrect call microservice-a.
+GET  http://localhost:8081/app/getInfo
+Content-Type: application/json
+
+### Calling microservice-a via API-Gateway.
+GET  http://localhost:8100/microservice-a/app/getInfo
+Content-Type: application/json
+
+#################################################################### microservice-b
+### Dirrect call microservice-b.
+GET  http://localhost:8082/app/getInfo
+Content-Type: application/json
+
+### Calling microservice-b via API-Gateway.
+GET  http://localhost:8100/microservice-b/app/getInfo
+Content-Type: application/json
+
+#################################################################### microservice-c
+### Dirrect call microservice-c.
+GET  http://localhost:8083/app/getInfo
+Content-Type: application/json
+
+### Calling microservice-c via API-Gateway.
+GET  http://localhost:8100/microservice-c/app/getInfo
+Content-Type: application/json
+
+#################################################################### microservice-d
+### Dirrect call microservice-d.
+GET  http://localhost:8084/app/getInfo
+Content-Type: application/json
+
+### Calling microservice-d via API-Gateway.
+GET  http://localhost:8100/microservice-d/app/1
+Content-Type: application/json
+
+#################################################################### microservice-e
+### Dirrect call microservice-e.
+GET  http://localhost:8085/app/getInfo
+Content-Type: application/json
+
+### Calling microservice-e via API-Gateway.
+GET  http://localhost:8100/microservice-e/app/getInfo
+Content-Type: application/json
+
+
+########################################################################################################################
+####################################### checkConnectionBetweenMicroservices ############################################
+########################################################################################################################
+
+#################################################################### microservice-a
+### Dirrect call microservice-a.
+GET  http://localhost:8081/app/checkConnectionBetweenMicroservices
+Content-Type: application/json
+
+### Calling microservice-a via API-Gateway.
+GET  http://localhost:8100/microservice-a/app/checkConnectionBetweenMicroservices
+Content-Type: application/json
+
+#################################################################### microservice-b
+### Dirrect call microservice-b.
+GET  http://localhost:8082/app/checkConnectionBetweenMicroservices
+Content-Type: application/json
+
+### Calling microservice-b via API-Gateway.
+GET  http://localhost:8100/microservice-b/app/checkConnectionBetweenMicroservices
+Content-Type: application/json
+
+#################################################################### microservice-c
+### Dirrect call microservice-c.
+GET  http://localhost:8083/app/checkConnectionBetweenMicroservices
+Content-Type: application/json
+
+### Calling microservice-c via API-Gateway.
+GET  http://localhost:8100/microservice-c/app/checkConnectionBetweenMicroservices
+Content-Type: application/json
+
+#################################################################### microservice-d
+### Dirrect call microservice-d.
+GET  http://localhost:8084/app/checkConnectionBetweenMicroservices
+Content-Type: application/json
+
+### Calling microservice-d via API-Gateway.
+GET  http://localhost:8100/microservice-d/app/checkConnectionBetweenMicroservices
+Content-Type: application/json
+
+#################################################################### microservice-e
+### Dirrect call microservice-e.
+GET  http://localhost:8085/app/checkConnectionBetweenMicroservices
+Content-Type: application/json
+
+### Calling microservice-e via API-Gateway.
+GET  http://localhost:8100/microservice-e/app/checkConnectionBetweenMicroservices
+Content-Type: application/json
+
+
+########################################################################################################################
+################################################## Eureka Server #######################################################
+########################################################################################################################
+###
+GET http://localhost:8761/
+
+
+########################################################################################################################
+################################################### Zull Server ########################################################
+########################################################################################################################
+###
+GET http://localhost:8100
